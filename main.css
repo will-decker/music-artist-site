@@ -13,6 +13,8 @@ body {
     font-size: 16px;
     color: white;
     overflow-x: hidden;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
 }
 
 .nav-header {
@@ -23,8 +25,31 @@ body {
 #landing {
     width: 100%;
     height: 100vh;
-    background: url("img/HeroSectionBG.png") no-repeat center top;
+    background: url("img/HeroSectionBG.png") no-repeat center top fixed;
     background-size: cover;
+}
+
+.headline {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.5rem;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.headline h1 {
+    text-shadow: 2px 2px 12px rgb(46, 45, 45);
+}
+
+.headline h1:before,
+.headline h1:after {
+    content: ""; 
+    display: block;
+    margin: 20px auto; 
+    width: 75%;
+    border-bottom: 1px solid #fff;
 }
 
 nav {
@@ -44,7 +69,7 @@ nav ul {
 }
 
 .black {
-    background: #000;
+    background: rgba(0, 0, 0, .8);
 }
 
 nav ul li {
@@ -70,7 +95,7 @@ nav ul li a {
 }
 
 .logo img {
-    height: 150px;
+    height: 125px;
     position: fixed;
     float: left;
 }
@@ -473,7 +498,7 @@ footer {
         background: #000;
     }
 
-    nav.black {
+    .black {
         background: #000;
     }
 
@@ -538,7 +563,7 @@ footer {
         background: #000;
     }
 
-    nav.black {
+    .black {
         background: #000;
     }
 
@@ -584,7 +609,7 @@ footer {
         background: #000;
     }
 
-    nav.black {
+    .black {
         background: #000;
     }
 

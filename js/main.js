@@ -1,3 +1,11 @@
+$(document).ready(function () {
+  $(".menu-icon").on("click", function () {
+    $("nav ul").toggleClass("showing");
+  })
+})
+
+
+// Adds smooth scrolling animation
 $("a[href^='#']").click(function (e) {
   e.preventDefault();
 
@@ -5,13 +13,13 @@ $("a[href^='#']").click(function (e) {
 
   $("body, html").animate({
     scrollTop: position
-  } /* speed */);
+  }, 1000);
 
   $('nav').addClass('black');
 
 });
 
-
+// Adding background to navbar on scroll
 $(window).on('wheel', function () {
   if ($(window).scrollTop()) {
     $('nav').addClass('black');
@@ -21,43 +29,43 @@ $(window).on('wheel', function () {
 })
 
 
-// $(function () {
+$(function () {
 
-//   // Find all YouTube videos
-//   var $allVideos = $("iframe[src^='https://www.youtube.com']"),
+  // Find all YouTube videos
+  var $allVideos = $("iframe[src^='https://www.youtube.com']"),
 
-//     // The element that is fluid width
-//     $fluidEl = $(".video-feature");
+    // The element that is fluid width
+    $fluidEl = $(".video-feature");
 
-//   // Figure out and save aspect ratio for each video
-//   $allVideos.each(function () {
+  // Figure out and save aspect ratio for each video
+  $allVideos.each(function () {
 
-//     $(this)
-//       .data('aspectRatio', this.height / this.width)
+    $(this)
+      .data('aspectRatio', this.height / this.width)
 
-//       // and remove the hard coded width/height
-//       .removeAttr('height')
-//       .removeAttr('width');
+      // and remove the hard coded width/height
+      .removeAttr('height')
+      .removeAttr('width');
 
-//   });
+  });
 
-//   // When the window is resized
-//   // (You'll probably want to debounce this)
-//   $(window).resize(function () {
+  // When the window is resized
+  // (You'll probably want to debounce this)
+  $(window).resize(function () {
 
-//     var newWidth = $fluidEl.width();
+    var newWidth = $fluidEl.width();
 
-//     // Resize all videos according to their own aspect ratio
-//     $allVideos.each(function () {
+    // Resize all videos according to their own aspect ratio
+    $allVideos.each(function () {
 
-//       var $el = $(this);
-//       $el
-//         .width(newWidth * .8)
-//         .height((newWidth * .8) * $el.data('aspectRatio'));
+      var $el = $(this);
+      $el
+        .width(newWidth * .8)
+        .height((newWidth * .8) * $el.data('aspectRatio'));
 
-//     });
+    });
 
-//     // Kick off one resize to fix all videos on page load
-//   }).resize();
+    // Kick off one resize to fix all videos on page load
+  }).resize();
 
-// });
+});
