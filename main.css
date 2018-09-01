@@ -3,18 +3,18 @@
     padding: 0;
 }
 
-html, 
-body {
+html {
     height: 100%;
 }
 
 body {
+    height: 100%;
     font-family: 'Roboto Slab', serif;
     font-size: 16px;
     color: white;
-    overflow-x: hidden;
     overflow-y: scroll; /* has to be scroll, not auto */
     -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
 }
 
 .nav-header {
@@ -61,7 +61,8 @@ nav {
 
 nav ul {
     background: rgba(0, 0, 0, 0);
-    overflow: hidden;
+    width: 100%;
+    overflow-x: hidden;
     padding: 0;
     text-align: center;
     margin: 0;
@@ -100,33 +101,6 @@ nav ul li a {
     float: left;
 }
 
-/* .landing-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 1em;
-    justify-items: center;
-}
-
-.new-single {
-    grid-column-start: 4; 
-    min-width:25%;
-}
-
-.new-single img {
-    max-width: 200px;
-    min-height: 200px;
-}
-
-.new-single h1 {
-    font-family: Montserrat;
-    font-size: 2em;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
-} */
-
 #bio {
     height: 100vh;
     width: 100vw;
@@ -136,16 +110,33 @@ nav ul li a {
 
 .bio-text {
     display: flex;
-    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    align-items:flex-start;
     height: 100vh;
-    width: 50vw;
+    width: 65vw;
     font-size: 35px;
+}
+
+.bio-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    padding: 0 70px;
+}
+
+.bio-text h1:after {
+    content: ""; 
+    display: block;
+    margin: 20px auto; 
+    width: 75%;
+    border-bottom: 1px solid #fff;
 }
 
 .bio-text p {
     /* padding-top: 15%; */
     line-height: 1.5;
-    padding: 50px;
+    padding: 30px 70px;
+    
 }
 
 #music {
@@ -168,6 +159,7 @@ nav ul li a {
     height: 100vh;
     background: black;
     position: relative;
+    overflow: hidden;
 }
 
 .tour-header img {
@@ -175,7 +167,7 @@ nav ul li a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
-    width: 40%;
+    width: 50%;
     background: black;
 }
 
@@ -223,7 +215,10 @@ nav ul li a {
 footer {
     height: 100px;
     overflow: hidden;
-    background: blue;
+    background: rgb(28, 28, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Media Queries */
@@ -241,10 +236,9 @@ footer {
   */
 
 @media (min-width: 1024px) and (max-width: 1280px) {
+    
+
     .bio-text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         height: 100vh;
         width: 85%;
         font-size: 30px;
@@ -263,6 +257,14 @@ footer {
     .dates ul:nth-child(3) {
         grid-column: span 2;
     }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
+
+    .headline {
+        font-size: 2.2rem;
+    }
+    
 }
 
 /* 
@@ -289,7 +291,7 @@ footer {
         background: #000;
     }
 
-    nav.black {
+    .black {
         background: #000;
     }
 
@@ -308,6 +310,10 @@ footer {
         display: block;
     }
 
+    .headline {
+        font-size: 2.5rem;
+    }
+
 
     #bio {
         height: 100vh;
@@ -316,16 +322,14 @@ footer {
     }
 
     .bio-text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        
         height: 100vh;
         width: 85%;
         font-size: 30px;
     }
 
     .bio-text p {
-        background: rgba(0, 0, 0, .25);
+        /* background: rgba(0, 0, 0, .25); */
         padding: 5px 15px 5px 15px;
     }
 
@@ -354,17 +358,17 @@ footer {
     ##Screen = B/w 768px to 1024px
   */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
     .logo {
         position: fixed;
         top: 0;
         background: white;
     }
 
-    .logo img {
+    .logo a img {
         height: 75px;
-        right: 30%;
-        text-align:right;
+        right: 40%;
+        text-align: left;
     }
 
     nav ul {
@@ -372,7 +376,7 @@ footer {
         background: #000;
     }
 
-    nav.black {
+    .black {
         background: #000;
     }
 
@@ -391,23 +395,49 @@ footer {
         display: block;
     }
 
+    .headline h1 {
+        font-size: 3.5rem;
+        margin-top: 50px;
+    }
+
     #bio {
-        background: url("img/BioSectionBG.jpg") no-repeat -600px;
+        background: url("img/BioSectionBG.jpg") no-repeat -800px;
+        height: 750px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
     }
     .bio-text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         height: 100vh;
         width: 75%;
         font-size: 22px;
     }
-    .bio-text p {
-        background: rgba(0, 0, 0, .25);
-        padding: 5px 15px 5px 15px;
+
+    .bio-text h1 {
+        font-size: 50px;
     }
+
+    .bio-text p {
+        /* background: rgba(0, 0, 0, .25); */
+        margin: 0 70px;
+    }
+
+    #music {
+        height: 600px;
+    }
+
+    #tour {
+        height: 1200px;
+    }
+
     .tour-header img {
         width: 75%;
+    }
+
+    .tour-dates {
+        position: relative;
+        right: 0;
     }
 }
 
@@ -439,7 +469,7 @@ footer {
         background: #000;
     }
 
-    nav.black {
+    .black {
         background: #000;
     }
 
@@ -458,21 +488,27 @@ footer {
         display: block;
     }
 
+    .headline {
+        font-size: 2rem;
+    }
 
     #bio {
         background: url("img/BioSectionBG.jpg") no-repeat -800px;
     }
     .bio-text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         height: 100vh;
         width: 100%;
         font-size: 30px;
     }
+
     .bio-text p {
         background: rgba(0, 0, 0, .25);
         padding: 5px 15px 5px 15px;
+    }
+
+    #tour {
+        font-size: 1rem;
+        height: 900px;
     }
     .tour-header img {
         width: 75%;
@@ -489,7 +525,7 @@ footer {
 
     .logo img {
         height: 75px;
-        right: 30%;
+        right: 40%;
         text-align:right;
     }
 
@@ -503,7 +539,7 @@ footer {
     }
 
     .showing {
-        max-height: 20em;
+        max-height: 10em;
     }
 
     nav ul li {
@@ -517,25 +553,39 @@ footer {
         display: block;
     }
 
+    .headline h1 {
+        margin-top: 50px;
+    }
 
     #bio {
-        background: url("img/BioSectionBG.jpg") no-repeat -800px;
-    }
-    .bio-text {
         display: flex;
-        align-items: center;
+        flex-flow: column;
         justify-content: center;
-        height: 100vh;
+        align-items:flex-start;
+        background: url("img/BioSectionBG.jpg") no-repeat -950px;
+        height: 650px;
+    }
+
+    .bio-text {
         width: 100%;
         font-size: 18px;
     }
+
+    .bio-text h1 {
+        font-size: 50px;
+    }
+
     .bio-text p {
-        background: rgba(0, 0, 0, .25);
-        padding: 5px 15px 5px 15px;
+        /* background: rgba(0, 0, 0, .25); */
+        margin: 5px 70px;
+    }
+
+    #tour {
+        height: 1250px;
     }
 
     .dates {
-        justify-items: start;
+        justify-items: center;
     }
 }
 
@@ -543,52 +593,6 @@ footer {
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-
-    .logo {
-        position: fixed;
-        top: 0;
-        background: white;
-    }
-
-    .logo img {
-        height: 75px;
-        right: 30%;
-        text-align:right;
-    }
-
-    nav ul {
-        max-height: 0;
-        background: #000;
-    }
-
-    .black {
-        background: #000;
-    }
-
-    .showing {
-        max-height: 20em;
-    }
-
-    nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px 0;
-        text-align: center;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    #bio {
-        background: url("img/BioSectionBG.jpg") no-repeat -675px;
-    }
-    .bio-text {
-        font-size: 18px;
-    }
-}
 
 @media (min-width: 320px) and (max-width: 480px) {
 
@@ -627,6 +631,10 @@ footer {
     .menu-icon {
         display: block;
     }
+
+    .headline {
+        font-size: 1.2rem;
+    }
     
     #bio {
         background: url("img/BioSectionBG.jpg") no-repeat -1050px;
@@ -648,7 +656,7 @@ footer {
     }
 
     #tour {
-        height: 600px;
+        height: 700px;
     }
 
     .top-img img {
@@ -668,6 +676,6 @@ footer {
     }
 
     .dates ul:nth-child(1) {
-        margin-right: 30px;
+        margin-right: 25px;
     }
 }

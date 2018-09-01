@@ -10,9 +10,19 @@ $("a[href^='#']").click(function (e) {
   e.preventDefault();
 
   var position = $($(this).attr("href")).offset().top;
+  var headerHeight;
+
+  function headerOffset() {
+    if ($(window).width() >= 1024) {
+      headerHeight = 130;
+    } else {
+      headerHeight = 70;
+    }
+    return headerHeight;
+  }
 
   $("body, html").animate({
-    scrollTop: position
+    scrollTop: position - headerOffset()
   }, 1000);
 
   $('nav').addClass('black');
@@ -40,8 +50,7 @@ $(function () {
   // Figure out and save aspect ratio for each video
   $allVideos.each(function () {
 
-    $(this)
-      .data('aspectRatio', this.height / this.width)
+    $(this).data('aspectRatio', this.height / this.width)
 
       // and remove the hard coded width/height
       .removeAttr('height')
@@ -59,10 +68,15 @@ $(function () {
     $allVideos.each(function () {
 
       var $el = $(this);
-      $el
-        .width(newWidth * .8)
-        .height((newWidth * .8) * $el.data('aspectRatio'));
-
+      if (newWidth >= 1600) {
+        $el
+          .width(newWidth * .6)
+          .height((newWidth * .6) * $el.data('aspectRatio'));
+      } else {
+        $el
+          .width(newWidth * .8)
+          .height((newWidth * .8) * $el.data('aspectRatio'));
+      }
     });
 
     // Kick off one resize to fix all videos on page load
