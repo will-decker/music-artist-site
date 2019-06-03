@@ -1,234 +1,259 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    height: 100%;
-    font-family: 'Roboto Slab', serif;
-    font-size: 16px;
-    color: white;
-    overflow-y: scroll; /* has to be scroll, not auto */
-    -webkit-overflow-scrolling: touch;
-    overflow-x: hidden;
+  height: 100%;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  color: white;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
 }
 
 .nav-header {
-    color: white;
-    font-size: 25px;
+  color: white;
+  font-size: 25px;
 }
 
 #landing {
-    width: 100%;
-    height: 100vh;
-    background: url("img/HeroSectionBG.png") no-repeat center top fixed;
-    background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background: url("img/HeroSectionBG.png") no-repeat center top fixed;
+  background-size: cover;
 }
 
 .headline {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 3.5rem;;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .headline h1 {
-    text-shadow: 2px 2px 12px rgb(46, 45, 45);
+  text-shadow: 2px 2px 12px rgb(46, 45, 45);
 }
 
 .headline h1:before,
 .headline h1:after {
-    content: ""; 
-    display: block;
-    margin: 20px auto; 
-    width: 75%;
-    border-bottom: 1px solid #fff;
+  content: "";
+  display: block;
+  margin: 20px auto;
+  width: 75%;
+  border-bottom: 1px solid #fff;
 }
 
 nav {
-    position: fixed;
-    width: 100%;
-    z-index: 101;
-    transition: 1s;
+  position: fixed;
+  width: 100%;
+  z-index: 101;
+  transition: 1s;
 }
 
 nav ul {
-    background: rgba(0, 0, 0, 0);
-    width: 100%;
-    overflow-x: hidden;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    transition: 1s;
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
 }
 
 .black {
-    background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 nav ul li {
-    display: inline-block;
-    padding: 50px 20px;
+  display: inline-block;
+  padding: 50px 20px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .menu-icon {
-    width: 100%;
-    background: #000;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 20px;
-    display: none;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  display: none;
 }
 
 .logo img {
-    height: 125px;
-    position: fixed;
-    float: left;
+  height: 125px;
+  position: fixed;
+  float: left;
 }
 
 #bio {
-    height: 100vh;
-    width: 100vw;
-    background: url("img/BioSectionBG.jpg") no-repeat center top;
-    background-size: cover;
+  width: 100vw;
+  background: url("img/BioSectionBG.jpg") no-repeat center top;
+  background-size: cover;
 }
 
 .bio-text {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items:flex-start;
-    height: 100vh;
-    width: 65vw;
-    font-size: 35px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  width: 65vw;
+  font-size: 35px;
 }
 
 .bio-text h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 70px;
-    padding: 0 70px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  padding: 0 70px;
 }
 
 .bio-text h1:after {
-    content: ""; 
-    display: block;
-    margin: 20px auto; 
-    width: 75%;
-    border-bottom: 1px solid #fff;
+  content: "";
+  display: block;
+  margin: 20px auto;
+  width: 75%;
+  border-bottom: 1px solid #fff;
 }
 
 .bio-text p {
-    /* padding-top: 15%; */
-    line-height: 1.5;
-    padding: 30px 70px;
-    
+  /* padding-top: 15%; */
+  line-height: 1.5;
+  padding: 30px 70px;
 }
 
 #music {
-    height: 100vh;
-    background: url("img/AlbumCover_lrg.jpg") no-repeat center 75% fixed;
-    background-size: cover;
+  background: url("img/AlbumCover_lrg.jpg") no-repeat center 75% fixed;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.videos-container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .video-feature {
-    height: 100%;
-    display: grid;
+  display: grid;
+  padding: 50px 125px 0;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
 }
 
-.resp-wrapper {
-    margin: auto;
+#music h1 {
+  grid-column-start: span 2;
+  font-family: "Montserrat", sans-serif;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 70px;
+  text-align: center;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=12, Direction=135, Color=#000000)"; /*IE 8*/
+  text-shadow: 2px 2px 12px #000000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=12, Direction=135, Color=#000000); /*IE 5.5-7*/
 }
 
+#music h1:after {
+  content: "";
+  display: block;
+  margin: 20px auto;
+  width: 75%;
+  border-bottom: 1px solid #fff;
+}
+
+.video {
+  border-radius: 4px;
+  overflow: hidden;
+  height: 315px;
+  -webkit-box-shadow: 0px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 13px 24px -8px rgba(0, 0, 0, 0.75);
+}
+
+iframe {
+  height: 100%;
+}
 
 #tour {
-    height: 100vh;
-    background: black;
-    position: relative;
-    overflow: hidden;
+  background: black;
+  position: relative;
+  overflow: hidden;
 }
 
 .tour-header img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
-    width: 50%;
-    background: black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  width: 50%;
+  background: black;
 }
 
 .top-img img {
-    width: 100%;
-    z-index: 100;
+  width: 100%;
+  z-index: 100;
 }
 
 .tour-dates {
-    display: grid;
-    
+  display: grid;
+  padding: 35px 0 80px;
 }
 
 .dates {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
-    justify-content: center;
-    justify-items: center;
-    grid-gap: 35px 0;
-    font-size: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 35px 0;
+  font-size: 30px;
 }
 
 .dates ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .dates ul:nth-child(1) {
-    margin-right: 42px;
+  margin-right: 42px;
 }
 
 .dates li span:nth-child(1) {
-    display: inline-block;
-    width: 75px;
+  display: inline-block;
+  width: 75px;
 }
 
 .dates li span:nth-child(2) {
-    color: rgb(161, 21, 3);
+  color: rgb(161, 21, 3);
 }
 
 .city {
-    font-weight: 700;
-    text-align: right;
+  font-weight: 700;
+  text-align: right;
 }
 
 footer {
-    height: 100px;
-    overflow: hidden;
-    background: rgb(28, 28, 29);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100px;
+  overflow: hidden;
+  background: rgb(28, 28, 29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Media Queries */
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {}
 
 /* 
     ##Device = Laptops, Desktops
@@ -236,35 +261,30 @@ footer {
   */
 
 @media (min-width: 1024px) and (max-width: 1280px) {
-    
+  .bio-text {
+    width: 85%;
+    font-size: 30px;
+  }
 
-    .bio-text {
-        height: 100vh;
-        width: 85%;
-        font-size: 30px;
-    }
+  .top-img img {
+    position: relative;
+    right: 325px;
+    width: 170%;
+  }
 
-    .top-img img {
-        position: relative;
-        right: 325px;
-        width: 170%;
-    }
+  .tour-header img {
+    width: 75%;
+  }
 
-    .tour-header img {
-        width: 75%;
-    }
-
-    .dates ul:nth-child(3) {
-        grid-column: span 2;
-    }
+  .dates ul:nth-child(3) {
+    grid-column: span 2;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
-
-    .headline {
-        font-size: 2.2rem;
-    }
-    
+  .headline {
+    font-size: 2.2rem;
+  }
 }
 
 /* 
@@ -272,85 +292,84 @@ footer {
     ##Screen = B/w 768px to 1024px
   */
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    background: white;
+  }
 
-    .logo {
-        position: fixed;
-        top: 0;
-        background: white;
-    }
+  .logo img {
+    height: 75px;
+    right: 40%;
+    text-align: right;
+  }
 
-    .logo img {
-        height: 75px;
-        right: 40%;
-        text-align:right;
-    }
+  nav ul {
+    max-height: 0;
+    background: #000;
+  }
 
-    nav ul {
-        max-height: 0;
-        background: #000;
-    }
+  .black {
+    background: #000;
+  }
 
-    .black {
-        background: #000;
-    }
+  .showing {
+    max-height: 20em;
+  }
 
-    .showing {
-        max-height: 20em;
-    }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+  }
 
-    nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px 0;
-        text-align: center;
-    }
+  .menu-icon {
+    display: block;
+  }
 
-    .menu-icon {
-        display: block;
-    }
+  .headline {
+    font-size: 2.5rem;
+  }
 
-    .headline {
-        font-size: 2.5rem;
-    }
+  #bio {
+    background: url("img/BioSectionBG.jpg") no-repeat -800px;
+    background-size: cover;
+  }
 
+  .bio-text {
+    width: 85%;
+    font-size: 30px;
+  }
 
-    #bio {
-        height: 100vh;
-        background: url("img/BioSectionBG.jpg") no-repeat -800px;
-        background-size: cover;
-    }
+  .bio-text p {
+    /* background: rgba(0, 0, 0, .25); */
+    padding: 5px 15px 5px 15px;
+  }
 
-    .bio-text {
-        
-        height: 100vh;
-        width: 85%;
-        font-size: 30px;
-    }
+  .video-feature {
+    padding: 50px 75px 0;
+  }
 
-    .bio-text p {
-        /* background: rgba(0, 0, 0, .25); */
-        padding: 5px 15px 5px 15px;
-    }
+  .top-img img {
+    position: relative;
+    right: 250px;
+    width: 170%;
+  }
 
-    .top-img img {
-        position: relative;
-        right: 270px;
-        width: 170%;
-    }
+  .tour-header img {
+    width: 70%;
+  }
 
-    .tour-header img {
-        width: 70%;
-    }
+  .tour-dates {
+    position: relative;
+    right: 30px;
+  }
 
-    .tour-dates {
-        position: relative;
-        right: 30px;
-    }
-
-    .dates ul:nth-child(3) {
-        grid-column: span 2;
-    }
+  .dates ul:nth-child(3) {
+    grid-column: span 2;
+  }
 }
 
 /* 
@@ -359,86 +378,81 @@ footer {
   */
 
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
-    .logo {
-        position: fixed;
-        top: 0;
-        background: white;
-    }
+  .logo {
+    position: fixed;
+    top: 0;
+    background: white;
+  }
 
-    .logo a img {
-        height: 75px;
-        right: 40%;
-        text-align: left;
-    }
+  .logo a img {
+    height: 75px;
+    right: 40%;
+    text-align: left;
+  }
 
-    nav ul {
-        max-height: 0;
-        background: #000;
-    }
+  nav ul {
+    max-height: 0;
+    background: #000;
+  }
 
-    .black {
-        background: #000;
-    }
+  .black {
+    background: #000;
+  }
 
-    .showing {
-        max-height: 20em;
-    }
+  .showing {
+    max-height: 20em;
+  }
 
-    nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px 0;
-        text-align: center;
-    }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+  }
 
-    .menu-icon {
-        display: block;
-    }
+  .menu-icon {
+    display: block;
+  }
 
-    .headline h1 {
-        font-size: 3.5rem;
-        margin-top: 50px;
-    }
+  .headline h1 {
+    font-size: 3.5rem;
+    margin-top: 50px;
+  }
 
-    #bio {
-        background: url("img/BioSectionBG.jpg") no-repeat -800px;
-        height: 750px;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
+  #bio {
+    background: url("img/BioSectionBG.jpg") no-repeat -800px;
+    height: 750px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .bio-text {
+    height: 100vh;
+    width: 75%;
+    font-size: 22px;
+  }
 
-    }
-    .bio-text {
-        height: 100vh;
-        width: 75%;
-        font-size: 22px;
-    }
+  .bio-text h1 {
+    font-size: 50px;
+  }
 
-    .bio-text h1 {
-        font-size: 50px;
-    }
+  .bio-text p {
+    /* background: rgba(0, 0, 0, .25); */
+    margin: 0 70px;
+  }
 
-    .bio-text p {
-        /* background: rgba(0, 0, 0, .25); */
-        margin: 0 70px;
-    }
+  #tour {
+    height: 1200px;
+  }
 
-    #music {
-        height: 600px;
-    }
+  .tour-header img {
+    width: 75%;
+  }
 
-    #tour {
-        height: 1200px;
-    }
-
-    .tour-header img {
-        width: 75%;
-    }
-
-    .tour-dates {
-        position: relative;
-        right: 0;
-    }
+  .tour-dates {
+    position: relative;
+    right: 0;
+  }
 }
 
 /* 
@@ -446,147 +460,154 @@ footer {
     ##Screen = B/w 481px to 767px
   */
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 0.5rem;
+  }
 
-    body {
-        font-size: .5rem;
-    }
+  .logo {
+    position: fixed;
+    top: 0;
+    background: white;
+  }
 
-    .logo {
-        position: fixed;
-        top: 0;
-        background: white;
-    }
+  .logo img {
+    height: 75px;
+    right: 30%;
+    text-align: right;
+  }
 
-    .logo img {
-        height: 75px;
-        right: 30%;
-        text-align:right;
-    }
+  nav ul {
+    max-height: 0;
+    background: #000;
+  }
 
-    nav ul {
-        max-height: 0;
-        background: #000;
-    }
+  .black {
+    background: #000;
+  }
 
-    .black {
-        background: #000;
-    }
+  .showing {
+    max-height: 20em;
+  }
 
-    .showing {
-        max-height: 20em;
-    }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+  }
 
-    nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px 0;
-        text-align: center;
-    }
+  .menu-icon {
+    display: block;
+  }
 
-    .menu-icon {
-        display: block;
-    }
+  #landing {
+    background: url("img/HeroSectionBG.png") no-repeat center top;
+  }
 
-    .headline {
-        font-size: 2rem;
-    }
+  .headline {
+    font-size: 2rem;
+  }
 
-    #bio {
-        background: url("img/BioSectionBG.jpg") no-repeat -800px;
-    }
-    .bio-text {
-        height: 100vh;
-        width: 100%;
-        font-size: 30px;
-    }
+  #bio {
+    background: url("img/BioSectionBG.jpg") no-repeat -800px;
+  }
 
-    .bio-text p {
-        background: rgba(0, 0, 0, .25);
-        padding: 5px 15px 5px 15px;
-    }
+  .bio-text {
+    height: 100vh;
+    width: 100%;
+    font-size: 30px;
+  }
 
-    #tour {
-        font-size: 1rem;
-        height: 900px;
-    }
-    .tour-header img {
-        width: 75%;
-    }
+  .bio-text p {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 5px 15px 5px 15px;
+  }
+
+  .video-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .video {
+    height: 350px;
+  }
+
+  .tour-header img {
+    width: 75%;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  .logo {
+    position: fixed;
+    top: 0;
+    background: white;
+  }
 
-    .logo {
-        position: fixed;
-        top: 0;
-        background: white;
-    }
+  .logo img {
+    height: 75px;
+    right: 40%;
+    text-align: right;
+  }
 
-    .logo img {
-        height: 75px;
-        right: 40%;
-        text-align:right;
-    }
+  nav ul {
+    max-height: 0;
+    background: #000;
+  }
 
-    nav ul {
-        max-height: 0;
-        background: #000;
-    }
+  .black {
+    background: #000;
+  }
 
-    .black {
-        background: #000;
-    }
+  .showing {
+    max-height: 10em;
+  }
 
-    .showing {
-        max-height: 10em;
-    }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+  }
 
-    nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px 0;
-        text-align: center;
-    }
+  .menu-icon {
+    display: block;
+  }
 
-    .menu-icon {
-        display: block;
-    }
+  .headline h1 {
+    margin-top: 50px;
+  }
 
-    .headline h1 {
-        margin-top: 50px;
-    }
+  #bio {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url("img/BioSectionBG.jpg") no-repeat -950px;
+    height: 650px;
+  }
 
-    #bio {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items:flex-start;
-        background: url("img/BioSectionBG.jpg") no-repeat -950px;
-        height: 650px;
-    }
+  .bio-text {
+    width: 100%;
+    font-size: 18px;
+  }
 
-    .bio-text {
-        width: 100%;
-        font-size: 18px;
-    }
+  .bio-text h1 {
+    font-size: 50px;
+  }
 
-    .bio-text h1 {
-        font-size: 50px;
-    }
+  .bio-text p {
+    /* background: rgba(0, 0, 0, .25); */
+    margin: 5px 70px;
+  }
 
-    .bio-text p {
-        /* background: rgba(0, 0, 0, .25); */
-        margin: 5px 70px;
-    }
+  #tour {
+    height: 1250px;
+  }
 
-    #tour {
-        height: 1250px;
-    }
-
-    .dates {
-        justify-items: center;
-    }
+  .dates {
+    justify-items: center;
+  }
 }
 
 /* 
@@ -595,87 +616,117 @@ footer {
   */
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    background: white;
+  }
 
-    .logo {
-        position: fixed;
-        top: 0;
-        background: white;
-    }
+  .logo img {
+    height: 75px;
+    right: 30%;
+    text-align: right;
+  }
 
-    .logo img {
-        height: 75px;
-        right: 30%;
-        text-align:right;
-    }
+  nav ul {
+    max-height: 0;
+    background: #000;
+  }
 
-    nav ul {
-        max-height: 0;
-        background: #000;
-    }
+  .black {
+    background: #000;
+  }
 
-    .black {
-        background: #000;
-    }
+  .showing {
+    max-height: 20em;
+  }
 
-    .showing {
-        max-height: 20em;
-    }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+  }
 
-    nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px 0;
-        text-align: center;
-    }
+  .menu-icon {
+    display: block;
+  }
 
-    .menu-icon {
-        display: block;
-    }
+  #landing {
+    background: url("img/HeroSectionBG.png") no-repeat -875px -55px;
+  }
 
-    .headline {
-        font-size: 1.2rem;
-    }
-    
-    #bio {
-        background: url("img/BioSectionBG.jpg") no-repeat -1050px;
-    }
+  .headline {
+    font-size: 1.2rem;
+  }
 
-    .bio-text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: 100%;
-        font-size: 20px;
-    }
+  #bio {
+    background: url("img/BioSectionBG.jpg") no-repeat -1050px;
+  }
 
-    .bio-text p {
-        background: rgba(0, 0, 0, .25);
-        padding: 5px 15px 5px 15px;
-        font-size: 1rem;
-    }
+  .bio-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    font-size: 20px;
+  }
 
-    #tour {
-        height: 700px;
-    }
+  .bio-text h1 {
+    font-size: 50px;
+  }
 
-    .top-img img {
-        position: relative;
-        right: 100px;
-        width: 150%;
-    }
+  .bio-text p {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 5px 15px 5px 15px;
+    font-size: 1rem;
+  }
 
-    .tour-header img {
-        width: 90%;
-        margin-bottom: 1em;
-    }
+  #music {
+    background: url("img/AlbumCover_lrg.jpg") no-repeat center;
+    padding: 50px 0;
+  }
 
-    .dates {
-        grid-gap: 10px 0;
-        font-size: 1rem;
-    }
+  #music h1 {
+    font-size: 50px;
+  }
 
-    .dates ul:nth-child(1) {
-        margin-right: 25px;
-    }
+  #music h1:after {
+    width: 45%;
+  }
+
+  .video-feature {
+    display: block;
+    padding: 50px 25px 0;
+  }
+
+  .video {
+    height: 200px;
+    margin-bottom: 25px;
+  }
+
+  .top-img img {
+    position: relative;
+    right: 75px;
+    width: 150%;
+  }
+
+  .tour-header img {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  .dates {
+    grid-gap: 10px 0;
+    font-size: 1rem;
+  }
+
+  .dates ul:nth-child(1) {
+    margin-right: 25px;
+  }
+
+  .dates li span:nth-child(1) {
+    width: 50px;
+  }
 }
