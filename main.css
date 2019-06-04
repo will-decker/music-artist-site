@@ -277,7 +277,8 @@ footer {
   }
 
   .dates {
-    /* font-size: 1.5em; */
+    font-size: 1.5em;
+    padding: 0 50px;
   }
 
   /* .dates ul:nth-child(3) {
@@ -332,7 +333,7 @@ footer {
   }
 
   #bio {
-    background: url("img/BioSectionBG.jpg") no-repeat -800px;
+    background: url("img/BioSectionBG.jpg") no-repeat -925px;
     background-size: cover;
   }
 
@@ -458,6 +459,11 @@ footer {
 
   .dates {
     font-size: 1.9em;
+    padding: 0 95px;
+  }
+
+  .dates li span:nth-child(1) {
+    width: 50px;
   }
 }
 
