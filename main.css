@@ -215,7 +215,7 @@ iframe {
 
 .dates {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   justify-items: center;
   grid-gap: 35px 0;
@@ -268,23 +268,21 @@ footer {
 
   .top-img img {
     position: relative;
-    right: 325px;
-    width: 170%;
+    right: 125px;
+    width: 120%;
   }
 
   .tour-header img {
     width: 75%;
   }
 
-  .dates ul:nth-child(3) {
-    grid-column: span 2;
+  .dates {
+    /* font-size: 1.5em; */
   }
-}
 
-@media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
-  .headline {
-    font-size: 2.2rem;
-  }
+  /* .dates ul:nth-child(3) {
+    grid-column: span 2;
+  } */
 }
 
 /* 
@@ -292,7 +290,7 @@ footer {
     ##Screen = B/w 768px to 1024px
   */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .logo {
     position: fixed;
     top: 0;
@@ -301,7 +299,7 @@ footer {
 
   .logo img {
     height: 75px;
-    right: 40%;
+    right: 43%;
     text-align: right;
   }
 
@@ -345,7 +343,7 @@ footer {
 
   .bio-text p {
     /* background: rgba(0, 0, 0, .25); */
-    padding: 5px 15px 5px 15px;
+    padding: 5px 65px 5px;
   }
 
   .video-feature {
@@ -354,7 +352,7 @@ footer {
 
   .top-img img {
     position: relative;
-    right: 250px;
+    right: 315px;
     width: 170%;
   }
 
@@ -364,95 +362,12 @@ footer {
 
   .tour-dates {
     position: relative;
-    right: 30px;
-  }
-
-  .dates ul:nth-child(3) {
-    grid-column: span 2;
-  }
-}
-
-/* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-
-@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
-  .logo {
-    position: fixed;
-    top: 0;
-    background: white;
-  }
-
-  .logo a img {
-    height: 75px;
-    right: 40%;
-    text-align: left;
-  }
-
-  nav ul {
-    max-height: 0;
-    background: #000;
-  }
-
-  .black {
-    background: #000;
-  }
-
-  .showing {
-    max-height: 20em;
-  }
-
-  nav ul li {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 24px 0;
-    text-align: center;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .headline h1 {
-    font-size: 3.5rem;
-    margin-top: 50px;
-  }
-
-  #bio {
-    background: url("img/BioSectionBG.jpg") no-repeat -800px;
-    height: 750px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-  }
-  .bio-text {
-    height: 100vh;
-    width: 75%;
-    font-size: 22px;
-  }
-
-  .bio-text h1 {
-    font-size: 50px;
-  }
-
-  .bio-text p {
-    /* background: rgba(0, 0, 0, .25); */
-    margin: 0 70px;
-  }
-
-  #tour {
-    height: 1200px;
-  }
-
-  .tour-header img {
-    width: 75%;
-  }
-
-  .tour-dates {
-    position: relative;
     right: 0;
   }
+
+  /* .dates ul:nth-child(3) {
+    grid-column: span 2;
+  } */
 }
 
 /* 
@@ -473,7 +388,7 @@ footer {
 
   .logo img {
     height: 75px;
-    right: 30%;
+    right: 40%;
     text-align: right;
   }
 
@@ -514,14 +429,13 @@ footer {
   }
 
   .bio-text {
-    height: 100vh;
     width: 100%;
     font-size: 30px;
   }
 
   .bio-text p {
     background: rgba(0, 0, 0, 0.25);
-    padding: 5px 15px 5px 15px;
+    padding: 5px 65px 5px;
   }
 
   .video-feature {
@@ -532,81 +446,18 @@ footer {
     height: 350px;
   }
 
+  .top-img img {
+    position: relative;
+    right: 55px;
+    width: 120%;
+  }
+
   .tour-header img {
     width: 75%;
   }
-}
-
-@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
-  .logo {
-    position: fixed;
-    top: 0;
-    background: white;
-  }
-
-  .logo img {
-    height: 75px;
-    right: 40%;
-    text-align: right;
-  }
-
-  nav ul {
-    max-height: 0;
-    background: #000;
-  }
-
-  .black {
-    background: #000;
-  }
-
-  .showing {
-    max-height: 10em;
-  }
-
-  nav ul li {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 24px 0;
-    text-align: center;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .headline h1 {
-    margin-top: 50px;
-  }
-
-  #bio {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-    background: url("img/BioSectionBG.jpg") no-repeat -950px;
-    height: 650px;
-  }
-
-  .bio-text {
-    width: 100%;
-    font-size: 18px;
-  }
-
-  .bio-text h1 {
-    font-size: 50px;
-  }
-
-  .bio-text p {
-    /* background: rgba(0, 0, 0, .25); */
-    margin: 5px 70px;
-  }
-
-  #tour {
-    height: 1250px;
-  }
 
   .dates {
-    justify-items: center;
+    font-size: 1.9em;
   }
 }
 
@@ -653,7 +504,7 @@ footer {
   }
 
   #landing {
-    background: url("img/HeroSectionBG.png") no-repeat -875px -55px;
+    background: url("img/HeroSectionBG.png") no-repeat -875px -100px;
   }
 
   .headline {
@@ -679,12 +530,12 @@ footer {
 
   .bio-text p {
     background: rgba(0, 0, 0, 0.25);
-    padding: 5px 15px 5px 15px;
+    padding: 5px 35px 5px;
     font-size: 1rem;
   }
 
   #music {
-    background: url("img/AlbumCover_lrg.jpg") no-repeat center;
+    background: url("img/AlbumCover_lrg.jpg") no-repeat center center;
     padding: 50px 0;
   }
 
@@ -720,6 +571,7 @@ footer {
   .dates {
     grid-gap: 10px 0;
     font-size: 1rem;
+    grid-template-columns: 1fr;
   }
 
   .dates ul:nth-child(1) {
