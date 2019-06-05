@@ -198,7 +198,6 @@ iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
   width: 50%;
   background: black;
 }
@@ -572,7 +571,6 @@ footer {
 
   .tour-header img {
     width: 90%;
-    margin-bottom: 1em;
   }
 
   .dates {
