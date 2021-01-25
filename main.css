@@ -276,7 +276,7 @@ footer {
 
 @media (max-width: 1440px) {
   #bio {
-    background: url('img/BioSectionBG.jpg') no-repeat -400px;
+    background: url('img/BioSectionBG.jpg') no-repeat center;
     background-size: cover;
   }
 }
