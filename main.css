@@ -256,6 +256,13 @@ footer {
 
 /* Media Queries */
 
+@media (max-width: 1440px) {
+  #bio {
+    background: url('img/BioSectionBG.jpg') no-repeat -550px;
+    background-size: cover;
+  }
+}
+
 @media (min-width: 2000px) {
   .bio-text {
     font-size: 32px;
