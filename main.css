@@ -41,9 +41,9 @@ body {
 
 .headline h1 {
   text-shadow: 2px 2px 12px rgb(46, 45, 45);
+  text-align: center;
 }
 
-.headline h1:before,
 .headline h1:after {
   content: '';
   display: block;
@@ -113,8 +113,8 @@ nav ul li a {
   justify-content: center;
   align-items: flex-start;
   height: 100vh;
-  width: 65vw;
-  font-size: 35px;
+  width: 55vw;
+  font-size: 20px;
 }
 
 .bio-text h1 {
@@ -150,7 +150,7 @@ nav ul li a {
 
 .video-feature {
   display: grid;
-  padding: 50px 125px 0;
+  padding: 50px 25px 0;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
 }
@@ -219,7 +219,7 @@ iframe {
   justify-content: center;
   justify-items: center;
   grid-gap: 40px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .dates ul li {
@@ -261,11 +261,6 @@ footer {
   */
 
 @media (min-width: 1024px) and (max-width: 1280px) {
-  .bio-text {
-    width: 85%;
-    font-size: 30px;
-  }
-
   .top-img img {
     position: relative;
     right: 125px;
@@ -277,7 +272,6 @@ footer {
   }
 
   .dates {
-    font-size: 1.5em;
     padding: 0 50px;
   }
 
@@ -333,22 +327,12 @@ footer {
   }
 
   #bio {
-    background: url('img/BioSectionBG.jpg') no-repeat -925px;
+    background: url('img/BioSectionBG.jpg') no-repeat -800px;
     background-size: cover;
   }
 
-  .bio-text {
-    width: 85%;
-    font-size: 30px;
-  }
-
-  .bio-text p {
-    /* background: rgba(0, 0, 0, .25); */
-    padding: 5px 65px 5px;
-  }
-
   .video-feature {
-    padding: 50px 75px 0;
+    padding: 50px 25px 0;
   }
 
   .top-img img {
@@ -376,7 +360,7 @@ footer {
     ##Screen = B/w 481px to 767px
   */
 
-@media (min-width: 481px) and (max-width: 769px) {
+@media (min-width: 481px) and (max-width: 768px) {
   body {
     font-size: 0.5rem;
   }
@@ -426,17 +410,17 @@ footer {
   }
 
   #bio {
-    background: url('img/BioSectionBG.jpg') no-repeat -800px;
+    background: url('img/BioSectionBG.jpg') no-repeat -900px;
   }
 
   .bio-text {
     width: 100%;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .bio-text p {
     background: rgba(0, 0, 0, 0.25);
-    padding: 5px 65px 5px;
+    margin-top: 15px;
   }
 
   .video-feature {
@@ -458,8 +442,14 @@ footer {
   }
 
   .dates {
-    font-size: 1.9em;
     padding: 0 95px;
+    grid-gap: 10px 0;
+    font-size: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .dates ul:nth-child(1) {
+    margin-right: 25px;
   }
 
   .dates li span:nth-child(1) {
@@ -472,7 +462,7 @@ footer {
     ##Screen = B/w 320px to 479px
   */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .logo {
     position: fixed;
     top: 0;
@@ -510,7 +500,7 @@ footer {
   }
 
   #landing {
-    background: url('img/HeroSectionBG.png') no-repeat -875px -100px;
+    background: url('img/HeroSectionBG.png') no-repeat -875px;
   }
 
   .headline {
@@ -536,7 +526,7 @@ footer {
 
   .bio-text p {
     background: rgba(0, 0, 0, 0.25);
-    padding: 5px 35px 5px;
+    padding: 30px 8px;
     font-size: 1rem;
   }
 
