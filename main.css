@@ -103,7 +103,6 @@ nav ul li a {
 
 #bio {
   width: 100vw;
-  padding: 50px 0;
   background: url('img/BioSectionBG.jpg') no-repeat center top;
   background-size: cover;
 }
@@ -113,6 +112,7 @@ nav ul li a {
   flex-flow: column;
   justify-content: center;
   align-items: flex-start;
+  padding-left: 55px;
   height: 100vh;
   width: 55vw;
   font-size: 20px;
@@ -139,14 +139,30 @@ nav ul li a {
 }
 
 #music {
+  display: block;
+  position: relative;
   background: url('img/AlbumCover_lrg.jpg') no-repeat center 75% fixed;
   background-size: cover;
   padding: 100px 0;
 }
 
+#music::after {
+  content: '';
+  background: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
 .videos-container {
+  display: block;
+  position: relative;
   max-width: 1400px;
   margin: 0 auto;
+  z-index: 10;
 }
 
 .video-feature {
@@ -258,7 +274,7 @@ footer {
 
 @media (max-width: 1440px) {
   #bio {
-    background: url('img/BioSectionBG.jpg') no-repeat -550px;
+    background: url('img/BioSectionBG.jpg') no-repeat -400px;
     background-size: cover;
   }
 }
@@ -432,13 +448,10 @@ footer {
   }
 
   .bio-text {
-    width: 100%;
-    font-size: 20px;
-  }
-
-  .bio-text p {
     background: rgba(0, 0, 0, 0.25);
-    margin-top: 15px;
+    width: 100%;
+    padding: 0;
+    font-size: 20px;
   }
 
   .video-feature {
@@ -530,10 +543,12 @@ footer {
   }
 
   .bio-text {
+    background: rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    padding: 0;
     width: 100%;
     font-size: 20px;
   }
@@ -543,8 +558,7 @@ footer {
   }
 
   .bio-text p {
-    background: rgba(0, 0, 0, 0.25);
-    padding: 30px 8px;
+    padding: 30px 25px;
     font-size: 1rem;
   }
 
