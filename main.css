@@ -363,7 +363,7 @@ footer {
   }
 
   #bio {
-    background: url('img/BioSectionBG.jpg') no-repeat -600px;
+    background: url('img/BioSectionBG.jpg') no-repeat -900px;
     background-size: cover;
   }
 
@@ -542,6 +542,7 @@ footer {
 
   #bio {
     background: url('img/BioSectionBG.jpg') no-repeat -1050px;
+    height: 800px;
   }
 
   .bio-text {
@@ -549,7 +550,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 800px;
     padding: 0;
     width: 100%;
     font-size: 20px;
