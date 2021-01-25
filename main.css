@@ -103,6 +103,7 @@ nav ul li a {
 
 #bio {
   width: 100vw;
+  padding: 50px 0;
   background: url('img/BioSectionBG.jpg') no-repeat center top;
   background-size: cover;
 }
@@ -257,21 +258,11 @@ footer {
 
 @media (min-width: 2000px) {
   .bio-text {
-    font-size: 42px;
+    font-size: 32px;
   }
 
   .dates {
-    font-size: 42px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .bio-text {
-    font-size: 30px;
-  }
-
-  .dates {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 
