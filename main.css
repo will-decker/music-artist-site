@@ -9,7 +9,7 @@ html {
 
 body {
   height: 100%;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 16px;
   color: white;
   overflow-y: scroll; /* has to be scroll, not auto */
@@ -25,12 +25,12 @@ body {
 #landing {
   width: 100%;
   height: 100vh;
-  background: url("img/HeroSectionBG.png") no-repeat center top fixed;
+  background: url('img/HeroSectionBG.png') no-repeat center top fixed;
   background-size: cover;
 }
 
 .headline {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-size: 3.5rem;
   display: flex;
@@ -45,7 +45,7 @@ body {
 
 .headline h1:before,
 .headline h1:after {
-  content: "";
+  content: '';
   display: block;
   margin: 20px auto;
   width: 75%;
@@ -103,7 +103,7 @@ nav ul li a {
 
 #bio {
   width: 100vw;
-  background: url("img/BioSectionBG.jpg") no-repeat center top;
+  background: url('img/BioSectionBG.jpg') no-repeat center top;
   background-size: cover;
 }
 
@@ -118,13 +118,13 @@ nav ul li a {
 }
 
 .bio-text h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 70px;
   padding: 0 70px;
 }
 
 .bio-text h1:after {
-  content: "";
+  content: '';
   display: block;
   margin: 20px auto;
   width: 75%;
@@ -138,7 +138,7 @@ nav ul li a {
 }
 
 #music {
-  background: url("img/AlbumCover_lrg.jpg") no-repeat center 75% fixed;
+  background: url('img/AlbumCover_lrg.jpg') no-repeat center 75% fixed;
   background-size: cover;
   padding: 100px 0;
 }
@@ -157,18 +157,18 @@ nav ul li a {
 
 #music h1 {
   grid-column-start: span 2;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width: 300px;
   margin: 0 auto;
   font-size: 70px;
   text-align: center;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=12, Direction=135, Color=#000000)"; /*IE 8*/
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Shadow(Strength=12, Direction=135, Color=#000000)'; /*IE 8*/
   text-shadow: 2px 2px 12px #000000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=12, Direction=135, Color=#000000); /*IE 5.5-7*/
 }
 
 #music h1:after {
-  content: "";
+  content: '';
   display: block;
   margin: 20px auto;
   width: 75%;
@@ -333,7 +333,7 @@ footer {
   }
 
   #bio {
-    background: url("img/BioSectionBG.jpg") no-repeat -925px;
+    background: url('img/BioSectionBG.jpg') no-repeat -925px;
     background-size: cover;
   }
 
@@ -376,7 +376,7 @@ footer {
     ##Screen = B/w 481px to 767px
   */
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 769px) {
   body {
     font-size: 0.5rem;
   }
@@ -418,7 +418,7 @@ footer {
   }
 
   #landing {
-    background: url("img/HeroSectionBG.png") no-repeat center top;
+    background: url('img/HeroSectionBG.png') no-repeat center top;
   }
 
   .headline {
@@ -426,7 +426,7 @@ footer {
   }
 
   #bio {
-    background: url("img/BioSectionBG.jpg") no-repeat -800px;
+    background: url('img/BioSectionBG.jpg') no-repeat -800px;
   }
 
   .bio-text {
@@ -510,7 +510,7 @@ footer {
   }
 
   #landing {
-    background: url("img/HeroSectionBG.png") no-repeat -875px -100px;
+    background: url('img/HeroSectionBG.png') no-repeat -875px -100px;
   }
 
   .headline {
@@ -518,7 +518,7 @@ footer {
   }
 
   #bio {
-    background: url("img/BioSectionBG.jpg") no-repeat -1050px;
+    background: url('img/BioSectionBG.jpg') no-repeat -1050px;
   }
 
   .bio-text {
@@ -541,7 +541,7 @@ footer {
   }
 
   #music {
-    background: url("img/AlbumCover_lrg.jpg") no-repeat center center;
+    background: url('img/AlbumCover_lrg.jpg') no-repeat center center;
     padding: 50px 0;
   }
 
