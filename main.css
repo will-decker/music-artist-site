@@ -255,6 +255,26 @@ footer {
 
 /* Media Queries */
 
+@media (min-width: 2000px) {
+  .bio-text {
+    font-size: 42px;
+  }
+
+  .dates {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bio-text {
+    font-size: 30px;
+  }
+
+  .dates {
+    font-size: 30px;
+  }
+}
+
 /* 
     ##Device = Laptops, Desktops
     ##Screen = B/w 1025px to 1280px
